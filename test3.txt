@@ -1,3 +1,16 @@
-123123
-123456123123
-123456
+package com.wux;
+/**
+ * @author Johung
+ * 公众号：快活的野指针
+ */
+public class Hash {
+  //从包含n个整数的数组中查找整数key，存在返回1，否则返回0
+  public static int find_key(int[] a,int n,int key){
+    //通过循环将key和每一个整数按顺序对比
+    for(int i=0;i<n;i++){
+      if(key==a[i]){//如果相等返回1
+         return 1;
+      }
+    }
+       return 0;
+  }
